@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Gita</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string name="buttonCaption">Click</string>
+	<string name="tvLineNo">Line No.</string>
+	<string name="tvadhyay">Adhyay</string>
+	<string name="tvVerseLength">Verse Length</string>
+	<string name="tvDescription">Description</string>
+	<string name="tvComment">Comment</string>
+	<string name="tvMBVersion">MB Version</string>
+	<string name="tvTheQuran">The Quran</string>
+	<string name="tvKJVBIBLE">KJVBIBLE</string>
+	<string name="tvShlokNo">ShlokNo.</string>
+	<string name="tvShlok">Shlok</string>
+</resources>

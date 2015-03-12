@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lineNOTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvLineNo"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/lineNOETVID"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/lineNOTVID"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/lineNOTVID"
+                android:inputType="number" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/adhyayTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/lineNOETVID"
+                android:text="@string/tvadhyay"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/adhyayETVID"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/adhyayTVID"
+                android:layout_alignRight="@+id/shlokTVID"
+                android:layout_toRightOf="@+id/adhyayTVID"
+                android:inputType="number" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/shlokNOTVID"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lineNOTVID"
+                android:layout_marginTop="20dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/shlokTVID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/mbVersionETID"
+                android:layout_below="@+id/adhyayTVID"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/shlokNOTVID"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minWidth="100dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/mbVersionTVID"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shlokNOTVID"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvMBVersion"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/mbVersionETID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/mbVersionTVID"
+                android:layout_below="@+id/shlokTVID"
+                android:layout_toRightOf="@+id/mbVersionTVID" 
+                android:inputType="textMultiLine|textCapSentences"
+                android:minWidth="100dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/commentTVID"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mbVersionTVID"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvComment"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/commentETVID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/commentTVID"
+                android:layout_alignLeft="@+id/mbVersionETID"
+                android:layout_below="@+id/mbVersionETID"
+                android:layout_toRightOf="@+id/commentTVID"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minWidth="100dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false"  />
+
+            <TextView
+                android:id="@+id/theQurantTVID"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentTVID"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvTheQuran"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/theQuranETVID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/theQurantTVID"
+                android:layout_below="@+id/commentETVID"
+                android:layout_toRightOf="@+id/theQurantTVID"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minWidth="100dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false"  />
+
+            <TextView
+                android:id="@+id/kjvBibleTVID"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/theQurantTVID"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvKJVBIBLE"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/kjvBibleETVID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/kjvBibleTVID"
+                android:layout_alignLeft="@+id/theQuranETVID"
+                android:layout_below="@+id/theQuranETVID"
+                android:layout_toRightOf="@+id/kjvBibleTVID"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minWidth="100dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false" 
+                android:imeActionLabel="Done"
+                android:imeOptions="actionDone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buttonContainerID"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:id="@+id/upperBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/saveBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/upperBorder"
+            android:layout_margin="1dp"
+            android:layout_toLeftOf="@+id/seperaterID"
+            android:src="@drawable/savebtn" />
+
+        <View
+            android:id="@+id/seperaterID"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/upperBorder"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/nextBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/upperBorder"
+            android:layout_toRightOf="@+id/seperaterID"
+            android:src="@drawable/nextbtn" />
+    </RelativeLayout>
+
+</RelativeLayout>

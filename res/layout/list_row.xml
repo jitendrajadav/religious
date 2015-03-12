@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/lineNOTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/tvLineNo" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/lineNoID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lineNOTVID"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lineNOTVID" />
+
+        <TextView
+            android:id="@+id/adhyayTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lineNoID"
+            android:text="@string/tvadhyay" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/adhyayID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/adhyayTVID" />
+
+        <TextView
+            android:id="@+id/shlokNOTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineNOTVID"
+            android:text="@string/tvShlokNo" />
+
+        <TextView
+            android:id="@+id/shlokNoID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineNOTVID"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/shlokNOTVID" />
+
+        <TextView
+            android:id="@+id/tvshlokID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineNOTVID"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/shlokNoID"
+            android:text="@string/tvShlok" />
+
+        <TextView
+            android:id="@+id/shlokID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineNOTVID"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvshlokID" />
+
+        <TextView
+            android:id="@+id/mbVersionTVID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shlokNOTVID"
+            android:text="@string/tvMBVersion" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mbVersionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shlokNOTVID"
+            android:layout_toRightOf="@+id/mbVersionTVID" />
+
+        <TextView
+            android:id="@+id/commentTVID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbVersionTVID"
+            android:text="@string/tvComment" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/commentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbVersionTVID"
+            android:layout_toRightOf="@+id/commentTVID"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/theQurantTVID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentTVID"
+            android:text="@string/tvTheQuran" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/quranID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentTVID"
+            android:layout_toRightOf="@+id/theQurantTVID"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/kjvBibleTVID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quranID"
+            android:text="@string/tvKJVBIBLE" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/kjvBilbeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quranID"
+            android:layout_toRightOf="@+id/kjvBibleTVID"
+            android:paddingLeft="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>
